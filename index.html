@@ -30,62 +30,81 @@
 
                 <div class="form-row">
                     <div class="col-lg-2 col-md-3  ">
-                        <label>Match Type</label>
 
-                        <div class="form-check">
-                            <input class="form-check-input " type="radio" name="League" id="radioLeague" value="league">
-                            <label class="form-check-label " for="radioLeague">
-                                League
-                            </label>
-                        </div>
+                        <div class="form-group">
+                            <label>Match Type</label>
 
-                        <div class="form-check">
-                            <input class="form-check-input " type="radio" name="35Over" id="radio35Over" value="35over">
-                            <label class="form-check-label" for="radio35Over">
-                                35 Overs
-                            </label>
-                        </div>
+                            <div class="form-check">
+                                <input class="form-check-input " type="radio" name="League" id="radioLeague"
+                                    value="league">
+                                <label class="form-check-label " for="radioLeague">
+                                    League
+                                </label>
+                            </div>
 
-                        <div class="form-check">
-                            <input class="form-check-input " type="radio" name="T20" id="T20" value="t20">
-                            <label class="form-check-label" for="T20">
-                                T 20
-                            </label>
+                            <div class="form-check">
+                                <input class="form-check-input " type="radio" name="35Over" id="radio35Over"
+                                    value="35over">
+                                <label class="form-check-label" for="radio35Over">
+                                    35 Overs
+                                </label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input " type="radio" name="T20" id="T20" value="t20">
+                                <label class="form-check-label" for="T20">
+                                    T 20
+                                </label>
+                            </div>
                         </div>
                         <br>
                     </div>
+
                     <div class="col">
-                        <label>Main Details</label>
                         <div class="form-group">
-                            <label for="Date">Date</label>
-                            <input type="date" class="form-control form-control-sm" id="Date">
-                        </div>
 
 
-                        <div class="form-group">
-                            <label for="homeTeam">Home Team</label>
-                            <select class="form-control form-control-sm">
-                                <option>Team 1</option>
-                                <option>Team 2</option>
-                                <option>Team 3</option>
-                            </select>
-                        </div>
+                            <label>Main Details</label>
+
+                            <div class="form-group">
+                                <label for="Division">Division</label>
+                                <select class="form-control form-control-sm">
+                                    <option>Division 1</option>
+                                    <option>Division 2</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="Date">Date</label>
+                                <input type="date" class="form-control form-control-sm" id="Date">
+                            </div>
 
 
-                        <div class="form-group">
-                            <label for="visitors">Visitors</label>
-                            <select class="form-control form-control-sm">
-                                <option>Team 1</option>
-                                <option>Team 2</option>
-                                <option>Team 3</option>
-                            </select>
-                        </div>
+                            <div class="form-group">
+                                <label for="homeTeam">Home Team</label>
+                                <select class="form-control form-control-sm">
+                                    <option>Team 1</option>
+                                    <option>Team 2</option>
+                                    <option>Team 3</option>
+                                </select>
+                            </div>
 
 
-                        <div class="form-group">
-                            <label for="venue">Venue</label>
-                            <input class="form-control form-control-sm" type="text"
-                                placeholder="Home Team Gorund Name Here" disabled>
+                            <div class="form-group">
+                                <label for="visitors">Visitors</label>
+                                <select class="form-control form-control-sm">
+                                    <option>Team 1</option>
+                                    <option>Team 2</option>
+                                    <option>Team 3</option>
+                                </select>
+                            </div>
+
+
+                            <div class="form-group">
+                                <label for="venue">Venue</label>
+                                <input class="form-control form-control-sm" type="text"
+                                    placeholder="Home Team Gorund Name Here" disabled>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -108,6 +127,7 @@
 
                     </div>
                 </div>
+
 
 
 
@@ -198,6 +218,7 @@
             </form>
         </div>
 
+
         <div id="UmpiresAssessment">
             <h5>Umpires Assessment</h5>
             <br>
@@ -208,10 +229,10 @@
                 </div>
                 <div class="col my-auto">
                     <div class="btn-group btn-group-sm " role="group" aria-label="Basic example">
-                        <button type="button" class="btn btn-secondary">Yes</button>
-                        <button type="button" class="btn btn-secondary">No</button>
+                        <button type="button" class="btn btn-dark">Yes</button>
+                        <button type="button" class="btn btn-dark">No</button>
                     </div>
-                    <!-- <input class="checkbox" type="checkbox" name="umpire" id="UmpirePresent"> -->
+
                 </div>
             </div>
 
@@ -334,15 +355,129 @@
                     </div>
                 </div>
 
-                <Div class="form-group">
+                <div class="form-group">
 
                     <label> Additional Comments</label>
                     <textarea class="form-control" rows="5" id="comment"></textarea>
 
                 </div>
-        </Div>
 
-        </form>
+            </form>
+        </div>
+
+
+        <div id="MatchReport">
+
+            <h5>Match Report</h5>
+            <!-- main information -->
+            <form action="">
+
+
+                <div class="form-group">
+                    <label for="Toss">Toss won by</label>
+                    <select class="form-control form-control-sm">
+                        <option>Team 1</option>
+                        <option>Team 2</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+
+                    <label> Choose to :</label>
+                    <div class="form-check">
+                        <input class="form-check-input " type="radio" name="League" id="Bat" value="league">
+                        <label class="form-check-label " for="Bat">
+                            Bat
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input " type="radio" name="bowl" id="Bowl" value="league">
+                        <label class="form-check-label " for="Bowl">
+                            Bowl
+                        </label>
+                    </div>
+
+                </div>
+
+                <!-- First inns first team batting-->
+                <div class="form-group form-row">
+
+                    <div class="col-lg-8 col-12 ">
+                        <label for=""> Scores: 1<sup>st</sup> inns</label>
+                        <input class="form-control form-control-sm" type="text" name="" id=""
+                            placeholder="1st Team Batting Scores">
+                    </div>
+                    <div class="col-lg-2 col-6" >
+                        <label for=""> Runs</label>
+                        <input class="form-control form-control-sm" type="number" name="" id="" min="0">
+                    </div>
+                    <div class="col-lg-2 col-6">
+                        <label for=""> Wkts</label>
+                        <input class="form-control form-control-sm" type="number" name="" id="" min="0" max="10">
+                    </div>
+                </div>
+
+                <!-- First inns second team batting-->
+                <div class="form-group form-row">
+
+                    <div class="col-lg-8 col-12 ">
+                        <label for=""> Scores: 1<sup>st</sup> inns</label>
+                        <input class="form-control form-control-sm" type="text" name="" id=""
+                            placeholder="2nd Team Batting Scores">
+                    </div>
+                    <div class="col-lg-2 col-6">
+                        <label for=""> Runs</label>
+                        <input class="form-control form-control-sm" type="number" name="" id="" min="0">
+                    </div>
+                    <div class="col-lg-2 col-6">
+                        <label for=""> Wkts</label>
+                        <input class="form-control form-control-sm" type="number" name="" id="" min="0" max="10">
+                    </div>
+                </div>
+
+                <!-- Second inns -->
+                <div class="form-group form-row">
+
+                    <div class="col-lg-8 col-12 ">
+                        <label for=""> Scores: 2<sup>nd</sup> inns</label>
+                        <input class="form-control form-control-sm" type="text" name="" id=""
+                            placeholder="2nd Inns For First Batting Team">
+                    </div>
+                    <div class="col-lg-2 col-6 ">
+                        <label for=""> Runs</label>
+                        <input class="form-control form-control-sm" type="number" name="" id="" min="0">
+                    </div>
+                    <div class="col-lg-2 col-6">
+                        <label for=""> Wkts</label>
+                        <input class="form-control form-control-sm" type="number" name="" id="" min="0" max="10">
+                    </div>
+                </div>
+                <!-- Second inns -->
+                <div class="form-group form-row">
+
+                    <div class="col-lg-8 col-12 ">
+                        <label for=""> Scores: 2<sup>nd</sup> inns</label>
+                        <input class="form-control form-control-sm" type="text" name="" id=""
+                            placeholder="2nd Inns Socre For Second Batting Team">
+                    </div>
+                    <div class="col-lg-2 col-6">
+                        <label for=""> Runs</label>
+                        <input class="form-control form-control-sm" type="number" name="" id="" min="0">
+                    </div>
+                    <div class="col-lg-2 col-6">
+                        <label for=""> Wkts</label>
+                        <input class="form-control form-control-sm" type="number" name="" id="" min="0" max="10">
+                    </div>
+                </div>
+
+                
+
+            </form>
+        </div>
+
+
+
+
     </div>
 
 
