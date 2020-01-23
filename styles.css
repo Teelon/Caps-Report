@@ -1,5 +1,9 @@
+body{
+    background-color:white;
+}
 .container-fluid{
     padding: 0 15%;
+    background-color: transparent;
 }
 
 .checked{
@@ -9,4 +13,14 @@
 .checkbox{
     height: 1rem;
     width: 1rem;
+}
+
+.dataSection{
+    background-color: white;
+    padding: 1rem;
+}
+
+.btn{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
