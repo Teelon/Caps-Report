@@ -27,6 +27,9 @@ body{
   #addRow{
     margin-top: 2rem;
   }
+  .btn-block{
+      margin-bottom: .5rem ;
+  }
  
   @media(max-width: 600px) {
     .container-fluid{

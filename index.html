@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-     <!-- jquery     -->
-     <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- jquery     -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <!-- font- awesome  -->
     <script src="https://kit.fontawesome.com/0b752f4071.js" crossorigin="anonymous"></script>
@@ -228,7 +228,10 @@
 
 
             <!-- Umpire Assessment Section -->
-            <div id="UmpiresAssessment">
+            <button type="button" class="btn btn-secondary btn-sm btn-block" data-toggle="collapse"
+                data-target="#UmpiresAssessment">Umpire Assessment</button>
+
+            <div id="UmpiresAssessment" class=" dataSection border shadow-lg p-3 mb-5 bg-white rounded collapse">
                 <h5>Umpires Assessment</h5>
                 <br>
 
@@ -371,7 +374,9 @@
 
             <!-- Match Report Section -->
 
-            <div id="MatchReport">
+            <button type="button" class="btn btn-secondary btn-sm btn-block" data-toggle="collapse"
+                data-target="#MatchReport">Match Report</button>
+            <div id="MatchReport" class=" dataSection border shadow-lg p-3 mb-5 bg-white rounded collapse">
 
                 <h5>Match Report</h5>
                 <!-- main information -->
@@ -476,13 +481,14 @@
             </div>
 
             <!-- Batsman Score Section -->
-            <h5>Batsman Scores</h5>
-
-            <div id="BatsmanScore">
-
-                <div   class="form-row inputFormRow  ">
+            
+            <button type="button" class="btn btn-secondary btn-sm btn-block" data-toggle="collapse"
+                data-target="#BatsmanScore">Batsman Score</button>
+            <div id="BatsmanScore" class=" dataSection border shadow-lg p-3 mb-5 bg-white rounded collapse">
+                <h5>Batsman Scores</h5>
+                <div class="form-row inputFormRow  ">
                     <div class="col-lg-1 col-md-12  d-flex justify-content-center">
-                        <span class="rowName" >Player 1</span>
+                        <span class="rowName">Player 1</span>
                     </div>
                     <div class="col-lg col-md-6  ">
                         <div class="form-group">
@@ -515,7 +521,7 @@
                             </select>
                         </div>
                     </div>
-    
+
                     <div class="col-lg col-md-6">
                         <div class="form-group">
                             <label class="sr-only" for="exampleFormControlSelect2">Bowler</label>
@@ -528,25 +534,119 @@
                             </select>
                         </div>
                     </div>
-    
+
                     <div class="col-lg-1 col-md-6  ">
-                        <button  type="button" class="btn btn-danger btn-sm removeRow"><i class="far fa-trash-alt"></i></button>
+                        <button type="button" class="btn btn-danger btn-sm removeRow"><i
+                                class="far fa-trash-alt"></i></button>
                     </div>
-    
-    
+
+
                 </div>
                 <!-- end of row -->
-    
+
                 <div id="newRow"></div>
                 <button id="addRow" type="button" class="btn btn-sm btn-info">Add Row</button>
-    
+
+            </div>
+
+
+            <!-- Bowlers Score Section -->
+            
+            <button type="button" class="btn btn-secondary btn-sm btn-block" data-toggle="collapse"
+                data-target="#BowlerScore">Bowler Score</button>
+
+            <div id="BowlerScore" class=" dataSection border shadow-lg p-3 mb-5 bg-white rounded collapse">
+                <h5>Batsman Scores</h5>
+                <div class="form-row inputFormRow  ">
+                    <div class="col-lg-1 col-md-12  d-flex justify-content-center">
+                        <span class="rowNameBowler">Bowler 1</span>
+                    </div>
+                    <div class="col-lg col-md-6  ">
+                        <div class="form-group">
+                            <label class="sr-only" for="exampleFormControlSelect2">Select Bowler</label>
+                            <select class="form-control form-control-sm" id="exampleFormControlSelect2">
+                                <option selected>Select Bowler</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-1 col-md-6 ">
+                        <div class="form-group">
+                            <label class="sr-only" for="inlineFormInputName2">Runs</label>
+                            <input type="number" class="form-control  form-control-sm " id="inlineFormInputName2"
+                                placeholder="Runs">
+                        </div>
+                    </div>
+                    <div class="col-lg col-md-6 ">
+                        <div class="form-group">
+                            <label class="sr-only" for="exampleFormControlSelect2">Wkts</label>
+                            <input type="number" class="form-control  form-control-sm " id="inlineFormInputName2"
+                            placeholder="Wkts">
+                        </div>
+                    </div>
+
+                    <div class="col-lg col-md-6">
+                        <div class="form-group">
+                            <label class="sr-only" for="exampleFormControlSelect2">Maidens</label>
+                            <input type="number" class="form-control  form-control-sm " id="inlineFormInputName2"
+                            placeholder="Madiens">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-1 col-md-6  ">
+                        <button type="button" class="btn btn-danger btn-sm removeBolwerRow"><i
+                                class="far fa-trash-alt"></i></button>
+                    </div>
+
+
+                </div>
+                <!-- end of row -->
+
+                <div id="newBowlerRow"></div>
+                <button id="addBowlerRow" type="button" class="btn btn-sm btn-info">Add Row</button>
+
             </div>
 
 
             <!-- Extras Section -->
-            <div id="Extras" >
-                <div class="FormRow">
+            <button type="button" class="btn btn-secondary btn-sm btn-block" data-toggle="collapse"
+                data-target="#Extras">Extras</button>
+            <div id="Extras" class=" dataSection border shadow-lg p-3 mb-5 bg-white rounded collapse">
+                <h5>Extras</h5>
 
+                <!-- wides -->
+                <div class="FormRow">
+                    <div class="form-group">
+                        <label>Wides</label>
+                        <input type="number" class="form-control  form-control-sm " placeholder="Wides">
+                    </div>
+                </div>
+
+                <!-- NO Balls -->
+                <div class="FormRow">
+                    <div class="form-group">
+                        <label>No Balls</label>
+                        <input type="number" class="form-control  form-control-sm " placeholder="No Balls">
+                    </div>
+                </div>
+
+                <!-- Byes -->
+                <div class="FormRow">
+                    <div class="form-group">
+                        <label>Byes</label>
+                        <input type="number" class="form-control  form-control-sm " placeholder="Byes">
+                    </div>
+                </div>
+
+                <!-- Leg Byes -->
+                <div class="FormRow">
+                    <div class="form-group">
+                        <label>Leg Byes</label>
+                        <input type="number" class="form-control  form-control-sm " placeholder="Leg Byes">
+                    </div>
                 </div>
 
             </div>
@@ -561,7 +661,7 @@
 
 
 
-  
+
     <!-- javascript file -->
     <script src="index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
