@@ -1,0 +1,109 @@
+<div id="MatchReport" class=" dataSection border shadow-lg p-3 mb-5 bg-white rounded collapse">
+
+    <h5>Match Report</h5>
+    <!-- main information -->
+    <% const home = info.home %>
+    <% const away = info.away %>
+
+    <div class="form-group">
+        <label for="Toss">Toss won by</label>
+        <select class="form-control form-control-sm wonby" onchange="enableRadio(event)" name="toss" required>
+            <option value="">Select Team</option>
+            <option value="home"><%= home%></option>
+            <option value="away"><%=away%></option>
+        </select>
+    </div>
+
+    <div class="form-group">
+
+        <label> Choose to :</label>
+        <div class="form-check">
+            <input class="form-check-input Choose" type="radio" name="choice" id="Bat" value="bat"
+                onchange="setInnsTeam(event)" disabled required>
+            <label class="form-check-label " for="Bat">
+                Bat
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input  Choose" type="radio" name="choice" id="Bowl" value="bowl"
+                onchange="setInnsTeam(event)" disabled required>
+            <label class="form-check-label " for="Bowl">
+                Bowl
+            </label>
+        </div>
+
+    </div>
+
+    <!-- First inns first team batting-->
+
+    <div class="form-group form-row">
+
+        <div class="col-lg-8 col-12 ">
+            <label for=""> Scores: 1<sup>st</sup> inns</label>
+            <input class="form-control form-control-sm teamInns1" type="text" name="teamInns1" value=""
+                placeholder="1st Team Batting Scores" disabled required>
+        </div>
+        <div class="col-lg-2 col-6">
+            <label for=""> Runs</label>
+            <input class="form-control form-control-sm" type="number" name="runsInns1" min="0" required>
+        </div>
+        <div class="col-lg-2 col-6">
+            <label for=""> Wkts</label>
+            <input class="form-control form-control-sm" type="number" name="wktsInns1" min="0" max="10" required>
+        </div>
+    </div>
+
+    <!-- First inns second team batting-->
+    <div class="form-group form-row">
+
+
+        <div class="col-lg-8 col-12 ">
+            <label for=""> Scores: 1<sup>st</sup> inns</label>
+            <input class="form-control form-control-sm teamInns2" type="text" name="teamInns2"
+                placeholder="2nd Team Batting Scores" value="" disabled >
+        </div>
+        <div class="col-lg-2 col-6">
+            <label for=""> Runs</label>
+            <input class="form-control form-control-sm" type="number" name="runsInns2" min="0" required>
+        </div>
+        <div class="col-lg-2 col-6">
+            <label for=""> Wkts</label>
+            <input class="form-control form-control-sm" type="number" name="wktsInns2" min="0" max="10" required>
+        </div>
+    </div>
+
+    <!-- Second inns -->
+    <div class="form-group form-row">
+
+        <div class="col-lg-8 col-12 ">
+            <label for=""> Scores: 2<sup>nd</sup> inns</label>
+            <input class="form-control form-control-sm teamInns3" type="text" name="teamInns3"
+                placeholder="2nd Inns For First Batting Team" disabled>
+        </div>
+        <div class="col-lg-2 col-6 ">
+            <label for=""> Runs</label>
+            <input class="form-control form-control-sm" type="number" name="runsInns3" min="0" > 
+        </div>
+        <div class="col-lg-2 col-6">
+            <label for=""> Wkts</label>
+            <input class="form-control form-control-sm" type="number" name="wktsInns3" min="0" max="10" >
+        </div>
+    </div>
+    <!-- Second inns -->
+    <div class="form-group form-row">
+
+        <div class="col-lg-8 col-12 ">
+            <label for=""> Scores: 2<sup>nd</sup> inns</label>
+            <input class="form-control form-control-sm teamInns4" type="text" name="teamInns4"
+                placeholder="2nd Inns Socre For Second Batting Team" disabled>
+        </div>
+        <div class="col-lg-2 col-6">
+            <label for=""> Runs</label>
+            <input class="form-control form-control-sm" type="number" name="runsInns4" min="0" >
+        </div>
+        <div class="col-lg-2 col-6">
+            <label for=""> Wkts</label>
+            <input class="form-control form-control-sm" type="number" name="wktsInns4" min="0" max="10" >
+        </div>
+    </div>
+</div>

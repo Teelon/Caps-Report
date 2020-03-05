@@ -1,0 +1,30 @@
+db.teams.insertOne({
+    name:"Sherfeild United",
+    season:[
+        {
+            year:2017,
+            members:[
+                {
+                    player_id: "213343ff2344132",
+                    player_name:"Teelon Mitchell"
+                },
+                {
+                    player_id: "fjkdfaslkdjiewf",
+                    player_name:"Sherwyn Hamilton"
+                }
+            ]
+        }
+        
+    ]
+})
+////////////////////////////////////////////////////////////////////
+
+db.teams.update(
+        {name: 'Madras United'},
+        {$push: {"season.members":  {
+                                     player_id: "jgkjhfhjf687 987",
+                                        player_name:"Peter Laurence"
+                                    }
+                }
+        }
+)

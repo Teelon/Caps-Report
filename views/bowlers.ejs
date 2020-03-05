@@ -1,0 +1,60 @@
+<% const members = info.awayMembers %>
+<div id="BowlerScore" class=" dataSection border shadow-lg p-3 mb-5 bg-white rounded collapse">
+    <h5>Bowler Scores</h5>
+    <div class="form-row inputFormRowBowler  ">
+        <div class="col-lg-1 col-md-12  d-flex justify-content-center">
+            <span class="rowNameBowler">Bowler 1</span>
+        </div>
+        <div class="col-lg-3 col-md-6  ">
+            <div class="form-group">
+                <label class="sr-only" for="exampleFormControlSelect2">Select Bowler</label>
+                <select class="form-control form-control-sm name" id="exampleFormControlSelect2" required>
+                    <option value="" selected>Select Bowler</option>
+                    <% members.forEach(function(member){ %>
+                    <option value="<%= member._id%>"> <%= member.name%> </option>
+                    <% }); %>
+                </select>
+            </div>
+        </div>
+        <div class="col-lg col-md-6 ">
+            <div class="form-group">
+                <label class="sr-only" for="inlineFormInputName2">Runs</label>
+                <input type="number" class="form-control  form-control-sm runs" id="inlineFormInputName2"
+                    placeholder="Runs" required>
+            </div>
+        </div>
+        <div class="col-lg col-md-6 ">
+            <div class="form-group">
+                <label class="sr-only" for="exampleFormControlSelect2">Wkts</label>
+                <input type="number" class="form-control  form-control-sm  wkts" id="inlineFormInputName2"
+                    placeholder="Wkts" required>
+            </div>
+        </div>
+
+        <div class="col-lg col-md-6 ">
+            <div class="form-group">
+                <label class="sr-only" for="exampleFormControlSelect2">Overs</label>
+                <input type="number" class="form-control  form-control-sm  overs" 
+                    placeholder="Overs Bowled" required>
+            </div>
+        </div>
+
+        <div class="col-lg col-md-6">
+            <div class="form-group">
+                <label class="sr-only" for="exampleFormControlSelect2">Maidens</label>
+                <input type="number" class="form-control  form-control-sm maidens" id="inlineFormInputName2"
+                    placeholder="Madiens" required>
+            </div>
+        </div>
+
+        <div class="col-lg-1 col-md-6  ">
+            <button type="button" class="btn btn-danger btn-sm removeBolwerRow"><i
+                    class="far fa-trash-alt"></i></button>
+        </div>
+
+
+    </div>
+
+    <div id="newBowlerRow"></div>
+    <button onclick="addBowlerRow()" type="button" class="btn btn-sm btn-info">Add Row</button>
+</div>

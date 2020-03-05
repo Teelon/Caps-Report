@@ -1,0 +1,56 @@
+<% const members = info.homeMembers %>
+
+<div id="BatsmanScore" class=" dataSection border shadow-lg p-3 mb-5 bg-white rounded  ">
+    <h5>Batsman Scores</h5>
+
+
+    <% const home = info.home %>
+    <% const away = info.away %>
+
+    <div class="form-group ">
+        <select class="form-control col-lg-3 form-control-sm batsmenScore" onchange="batmenScore()" name="toss"
+            required>
+            <option value="">Select Team</option>
+            <option value="home"><%= home%></option>
+            <option value="away"><%=away%></option>
+        </select>
+
+
+
+
+
+        <div class="form-check  form-check-inline">
+            <input class="form-check-input inns" type="radio" name="choice" id="Bat" value="bat"
+                onchange="setInnsTeam(event)" disabled required>
+            <label class="form-check-label " for="Bat">
+                1st Inns
+            </label>
+        </div>
+        <div class="form-check  form-check-inline">
+            <input class="form-check-input  inns" type="radio" name="choice" id="Bowl" value="bowl"
+                onchange="setInnsTeam(event)" disabled required>
+            <label class="form-check-label " for="Bowl">
+                2nd Inns
+            </label>
+        </div>
+
+    </div>
+
+    <div id="home1">
+        <%- include('./batsman/batsmanRow') -%>
+    </div>
+<!-- 
+    <div id="home2">
+        <%- include('./batsman/batsmanRow') -%>
+    </div>
+    <div id="away1">
+        <%- include('./batsman/batsmanRow') -%>
+    </div>
+    <div id="away2">
+        <%- include('./batsman/batsmanRow') -%>
+    </div> -->
+    
+    <!-- <div id="newRow"></div> -->
+    <button id="addRow" onclick="addBatsmanRow()" type="button" class="btn btn-sm btn-info">Add Row</button>
+
+</div>

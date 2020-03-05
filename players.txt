@@ -1,0 +1,178 @@
+
+
+db.teams.insert({
+    "division":"Division 1",
+    "name": "Madras United",
+    "member": [{
+    "_id": ObjectId(),
+    "name":"Dennis Mitchell",
+    "address":"Cunupia"
+},
+{
+    "_id": ObjectId(),
+    "name":"Damian Butcher",
+    "address":"Chaguanas"
+},
+{
+    "_id": ObjectId(),
+    "name":"Kishan Sookdeo",
+    "address":"Cunupia"
+},
+{
+    "_id": ObjectId(),
+    "name":"Deoraj Gopaul",
+    "address":"Chaguanas"
+},
+{
+    "_id": ObjectId(),
+    "name":"Imran Khan",
+    "address":"Cunupia"
+},
+{
+    "_id": ObjectId(),
+    "name":" Kerron Edwards",
+    "address":"Cunupia"
+},
+{
+    "_id": ObjectId(),
+    "name":" Kenny Mcquilkin",
+    "address":"Cunupia"
+},
+{
+    "_id": ObjectId(),
+    "name":" Suresh Bangap",
+    "address":"Cunupia"
+},
+{
+    "_id": ObjectId(),
+    "name":" Kenette Lalla",
+    "address":"Cunupia"
+},
+{
+    "_id": ObjectId(),
+    "name":" Govinda Gordewn",
+    "address":"Cunupia"
+},
+{
+    "_id": ObjectId(),
+    "name":" GKristian Habib",
+    "address":"Cunupia"
+},
+{
+    "_id": ObjectId(),
+    "name":"Sean Joseph",
+    "address":"Chaguanas"
+},
+{
+    "_id": ObjectId(),
+    "name":"Jason Joseph",
+    "address":"Chaguanas"
+},
+{
+    "_id": ObjectId(),
+    "name":"Satrohan Austin",
+    "address":" Monroe Road"
+},
+{
+    "_id": ObjectId(),
+    "name":"Nicholas Austin",
+    "address":" Monroe Road"
+},
+{
+    "_id": ObjectId(),
+    "name":"Chaitram Ramlal",
+    "address":" Monroe Road"
+}]
+})
+
+????????????????????????????????????????????????????????????????????????????
+
+
+
+Lange park
+db.teams.insert({
+    "name": "Lange Park Sports",
+    "members":[
+        {
+            "_id":ObjectId(),
+    "name":"Marvin Edwards",
+    "address":"Chaguanas"
+},
+{
+    "_id":ObjectId(),
+    "name":"Shonari Gittens",
+    "address":"Freeport"
+},
+{
+    "_id":ObjectId(),
+    "name":"Zuberi Gittens",
+    "address":"Freeport"
+},
+{
+    "_id":ObjectId(),
+    "name":"Riaz Ali",
+    "address":"Chaguanas"
+},
+{
+    "_id":ObjectId(),
+    "name":"Afraz Ali",
+    "address":"Chaguanas"
+},
+{
+    "_id":ObjectId(),
+    "name":"Kevin Lamont",
+    "address":"Couva"
+},
+{
+    "_id":ObjectId(),
+    "name":"Matthew Co",
+    "address":"Claxton Bay"
+},
+{
+    "_id":ObjectId(),
+    "name":"Keon Lawrence",
+    "address":"Cunupia"
+},
+{
+    "_id":ObjectId(),
+    "name":"Jnoe Bristol",
+    "address":"Chaguanas"
+},
+{
+    "_id":ObjectId(),
+    "name":"Jabari Gittens",
+    "address":"Freeport"
+},
+{
+    "_id":ObjectId(),
+    "name":"Jerron Frankyln",
+    "address":"Edinburgh 500"
+},
+{
+    "_id":ObjectId(),
+    "name":"Phagoo Soomai",
+    "address":"Cunupia"
+},
+{
+    "_id":ObjectId(),
+    "name":"Joel Bristol",
+    "address":"Chaguanas"
+},
+{
+    "_id":ObjectId(),
+    "name":"Willon Hyde",
+    "address":"Waterloo"
+},
+{
+    "_id":ObjectId(),
+    "name":"Amando Phillip",
+    "address":"Lange Park"
+},
+{
+    "_id":ObjectId(),
+    "name":"Rick Ali",
+    "address":"Lange Park"
+}
+    ]
+})
+

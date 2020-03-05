@@ -1,0 +1,185 @@
+<%- include('header') -%>
+
+
+<div class="container-fluid">
+    <form id="mainForm" action="/report" class="needs-validation" novalidate>
+        <!-- General Report -->
+        <button type="button" class="btn btn-secondary btn-sm btn-block" data-toggle="collapse"
+            data-target="#GeneralReport">General Report</button>
+        <div id="GeneralReport" class=" dataSection shadow-lg p-3 mb-5 bg-white rounded">
+            <h5>General Report</h5>
+            <br>
+
+
+
+            <div class="form-row">
+                <div class="col-lg-2 col-md-3  ">
+
+                    <div class="form-group">
+                        <label>Match Type</label>
+
+                        <div class="form-check custom-control custom-radio">
+                            <input class="form-check-input " type="radio" name="matchType" id="radioLeague"
+                                value="league" required>
+                            <label class="form-check-label " for="radioLeague">
+                                League
+                            </label>
+
+
+                        </div>
+
+                        <div class="form-check custom-control custom-radio">
+                            <input class="form-check-input " type="radio" name="matchType" id="radio35Over"
+                                value="35over">
+                            <label class="form-check-label" for="radio35Over">
+                                35 Overs
+                            </label>
+                        </div>
+
+                        <div class="form-check custom-control custom-radio">
+                            <input class="form-check-input " type="radio" name="matchType" id="T20" value="t20">
+                            <label class="form-check-label" for="T20">
+                                T 20
+                            </label>
+                        </div>
+                    </div>
+
+                    <br>
+                </div>
+
+                <div class="col">
+                    <div class="form-group">
+
+
+                        <label>Main Details</label>
+
+                        <div class="form-group">
+                            <label for="Division">Division</label>
+                            <select name="division" class="form-control form-control-sm division">
+                                <option value="<%= info.division %>"><%= info.division %></option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="Date">Date</label>
+                            <input type="date" class="form-control form-control-sm" id="Date" name="date" required>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="homeTeam">Home Team</label>
+                            <select class="form-control form-control-sm homeTeam" name="homeTeam">
+                                <option value="<%= info.home_id%>"><%= info.home%></option>
+                            </select>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="visitors">Visitors</label>
+                            <select class="form-control form-control-sm awayTeam" name="awayTeam">
+                                <option value="<%= info.away_id%>"><%=info.away%></option>
+                            </select>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="form-group">
+
+                <div class="form-row">
+                    <div class="col-lg-2 col-md-3 my-auto">
+                        <label>Start Time</label>
+                    </div>
+                    <div class="col">
+                        <label for="dayOne">Day One</label>
+                        <input class="form-control form-control-sm" type="time" id="dayOne" name="dayOne" required>
+                        <small> HH:MM AM/PM</small>
+                        <br>
+                        <label for="dayTwo">Day Two</label>
+                        <input class="form-control form-control-sm" type="time" id="dayTwo" name="dayTwo" required>
+                        <small> HH:MM AM/PM</small>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+
+
+
+
+        </div>
+
+        <!-------------------------- Ground Assessignment Section-------------------------------------------->
+        <button type="button" class="btn btn-secondary btn-sm btn-block" data-toggle="collapse"
+            data-target="#GroundAssessment">Ground Assessment</button>
+
+
+        <%- include('groundAssessment') -%>
+        <!-------end of pitch assessment ------>
+
+
+        <!----------------------------------- Umpire Assessment Section ---------------------------------->
+        <!-- <button type="button" class="btn btn-secondary btn-sm btn-block" data-toggle="collapse"
+            data-target="#UmpiresAssessment">Umpire Assessment</button>
+        <%- include('umpireAssessment') -%> -->
+
+
+        <!-------end of match report ------>
+
+
+
+        <!--------------------------------- Match Report Section --------------------------------------->
+
+        <button type="button" class="btn btn-secondary btn-sm btn-block" data-toggle="collapse"
+            data-target="#MatchReport">Match Report</button>
+
+        <%- include('matchReport') -%>
+
+        <!-------end of match report ------>
+
+
+
+
+
+
+        <!--------------------------------- Batsman Score Section --------------------------------------->
+        <button type="button" class="btn btn-secondary btn-sm btn-block" data-toggle="collapse"
+            data-target="#BatsmanScore">Batsman Score</button>
+
+        <%- include('batsmen') -%>
+
+        <!-------end of batsman ------>
+
+
+
+
+        <!------------------------------------- Bowlers Score Section------------------------------------- -->
+        <button type="button" class="btn btn-secondary btn-sm btn-block" data-toggle="collapse"
+            data-target="#BowlerScore">Bowler Score</button>
+
+        <%- include('bowlers') -%>
+        <!------end of row ----->
+
+
+
+
+        <!------------------------------------- Extras Section------------------------------------- -->
+        <button type="button" class="btn btn-secondary btn-sm btn-block" data-toggle="collapse"
+            data-target="#Extras">Extras</button>
+        <%- include('extras') -%>
+        <!------end of extras ----->
+
+
+
+        <!-- onclick="postForm()" -->
+        <input type="submit" value="Submit" class="btn btn-primary">
+    </form>
+</div>
+
+
+<%- include('footer') -%>
