@@ -21,7 +21,7 @@ const selection = require("./routes/selection");
 //Send for routes
 app.use("/report",report);
 app.use("/team",team);
-app.use("/selection",selection);
+app.use("/",selection);
 
 
 
